@@ -13,7 +13,6 @@ gs1 = gridspec.GridSpecFromSubplotSpec(5, 1, subplot_spec=gs0[0], height_ratios=
 
 plot_ax = fig.add_subplot(gs0[1])
 text_ax = fig.add_subplot(gs1[0])
-text_ax.axis('off')
 start_ax = fig.add_subplot(gs1[1])
 stop_ax = fig.add_subplot(gs1[2])
 man_ax = fig.add_subplot(gs1[3])
@@ -51,12 +50,9 @@ def upload(event):
 # axbox = fig.add_axes([0.1, 0.05, 0.6, 0.075])
 # axprev = fig.add_axes([0.7, 0.05, 0.1, 0.075])
 # axnext = fig.add_axes([0.81, 0.05, 0.1, 0.075])
-# text_box = TextBox(text_ax, "", textalignment="left")
-# text_box.on_submit(submit)
-# text_box.set_val("t ** 2")  # Trigger `submit` with the initial string.
-props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-text_ax.text(0.05, 0.95, "yeetus", transform=text_ax.transAxes, fontsize=14,
-        verticalalignment='top')
+text_box = TextBox(text_ax, "", textalignment="left")
+#text_box.on_submit(submit)
+text_box.set_val("t ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\nt ** 2\nasdjaisjda\naduhsudas\n")  # Trigger `submit` with the initial string.
 bnext = Button(start_ax, 'Start')
 bnext.on_clicked(start)
 bprev = Button(stop_ax, 'Stop')
